@@ -1,0 +1,10 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "pogodynka",
+            "database": "${workspaceFolder:pogodynka}/var/data.db"
+        }
+    ]
+}
