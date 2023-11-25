@@ -139,4 +139,10 @@ class Forecast
 
         return $this;
     }
+
+    public function getFahrehneit(): ?string
+    {
+        $fahrenheit = $this->temperature * 9 / 5 + 32;
+        return "$fahrenheit";
+    }
 }

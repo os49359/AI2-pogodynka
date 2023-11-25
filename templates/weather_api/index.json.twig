@@ -1,0 +1,12 @@
+{
+    "city": Police,
+    "country": PL,
+    "measurements": [
+        {% for measurement in measurements %}
+            {
+                "date": "{{ measurement.date | date('Y-m-d') }}",
+                "temperature": "{{ measurement.temperature }}",
+            }{% if not loop.last %},{% endif %}
+        {% endfor %}
+    ]
+}
